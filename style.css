@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 nav {
     /* border: blue 2px solid ; */
     display: flex;
@@ -14,14 +15,24 @@ nav {
     background-color: white;
 }
 
-.st-nav {
+
+.st-paul-logo{
+    
+}
+
+.st-paul-logo img{
+    width: 200px;
+}
+
+/* .st-nav {
     padding: 6px;
     color: black;
     justify-content: flex-start;
-    /* padding-right: 5px; */
-}
+ 
+} */
 
 .hlb ul {
+    /* border: green solid 2px; */
     display: flex;
     gap: 50px;
     list-style-type: none;
@@ -44,6 +55,7 @@ nav {
         display: flex;
         flex-direction: column;
         /* flex-wrap: wrap; */
+        padding-left: 15px;
     }
 
     .hlb ul {
@@ -51,6 +63,7 @@ nav {
         flex-direction: column;
         text-align: left;
         gap: 5px;
+        padding-left:0px ;
     }
 
 }
@@ -85,11 +98,14 @@ nav {
     margin: 30px;
 }
 
+
+
 .faith {
     text-align: center;
     font-weight: bolder;
     padding: 20px;
     margin: 40px;
+    
 }
 
 .statement {
@@ -99,6 +115,7 @@ nav {
     text-align: center;
     padding: 20px;
     margin-bottom: 30px;
+    
 }
 
 @media screen and (max-width:930px) {
@@ -114,10 +131,22 @@ nav {
 .time {
     display: flex;
     justify-content: space-around;
-    padding: 40px;
+    padding: 50px;
     margin-top: 30px;
     background-color: rgb(233, 69, 69);
     width: 100%;
+}
+.time-writeup{
+    display: flex;
+    color: white;
+    /* justify-content: space-around; */
+    
+}
+
+.time-writeup-2{
+
+padding-left: 150px;
+
 }
 
 .btn-3 button {
@@ -129,4 +158,98 @@ nav {
     color: white;
     background-color: rgb(233, 69, 69);
 
+}
+
+@media screen and (max-width:930px) {
+    
+.time{
+    display: flex;
+}
+
+.time-writeup{
+    display: flex;
+ flex-direction: column;
+ padding-left: 0px;
+}
+
+.time-writeup-2{
+    padding-left: 0px;
+    padding-top: 5px;
+}
+
+}
+
+@media screen and (max-width:460px) {
+    
+.time{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.time-writeup-1{
+    padding: 5px;
+}
+
+.time-writeup-2{
+
+    padding: 5px;
+
+}
+
+.btn-3{
+    padding-top:10px ;
+}
+
+}
+
+
+.wel-church{
+
+    background-color: #eee;
+    display: flex;
+    gap: 0px;
+    /* text-align: center; */
+    padding-left: 200px;
+}
+
+.welcome{
+    background-color: white;
+    margin: 50px;
+    padding: 50px;
+    font-weight: 600;
+}
+
+
+.days{
+
+    background-color: rgb(233, 69, 69);
+    color: white;
+    padding: 35x;
+    margin: 30px;
+    /* padding-left: 0px; */
+    font-size: 30px;
+}
+
+.days-1 > div{
+    padding: 10px;
+}
+
+.days-1{
+    display: inline-flex;
+    padding:2rem ;
+}
+
+.day-1233{
+    border-right: 2px white solid;
+}
+
+.hours{
+    border-right: white 2px solid;
+}
+
+.seconds{
+    padding-left: 30px;
+    padding-top: 0px;
+    margin-top: -20px;
 }
