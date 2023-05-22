@@ -16,11 +16,9 @@ nav {
 }
 
 
-.st-paul-logo{
-    
-}
+.st-paul-logo {}
 
-.st-paul-logo img{
+.st-paul-logo img {
     width: 200px;
 }
 
@@ -49,7 +47,7 @@ nav {
     border: 0px;
 }
 
-@media screen and (max-width:930px) {
+@media screen and (max-width:991px) {
 
     nav {
         display: flex;
@@ -63,7 +61,7 @@ nav {
         flex-direction: column;
         text-align: left;
         gap: 5px;
-        padding-left:0px ;
+        padding-left: 0px;
     }
 
 }
@@ -105,7 +103,7 @@ nav {
     font-weight: bolder;
     padding: 20px;
     margin: 40px;
-    
+
 }
 
 .statement {
@@ -115,10 +113,10 @@ nav {
     text-align: center;
     padding: 20px;
     margin-bottom: 30px;
-    
+
 }
 
-@media screen and (max-width:930px) {
+@media screen and (max-width:991px) {
 
     .statement {
         display: flex;
@@ -136,16 +134,17 @@ nav {
     background-color: rgb(233, 69, 69);
     width: 100%;
 }
-.time-writeup{
+
+.time-writeup {
     display: flex;
     color: white;
     /* justify-content: space-around; */
-    
+
 }
 
-.time-writeup-2{
+.time-writeup-2 {
 
-padding-left: 150px;
+    padding-left: 150px;
 
 }
 
@@ -160,51 +159,51 @@ padding-left: 150px;
 
 }
 
-@media screen and (max-width:930px) {
-    
-.time{
-    display: flex;
-}
+@media screen and (max-width:991px) {
 
-.time-writeup{
-    display: flex;
- flex-direction: column;
- padding-left: 0px;
-}
+    .time {
+        display: flex;
+    }
 
-.time-writeup-2{
-    padding-left: 0px;
-    padding-top: 5px;
-}
+    .time-writeup {
+        display: flex;
+        flex-direction: column;
+        padding-left: 0px;
+    }
+
+    .time-writeup-2 {
+        padding-left: 0px;
+        padding-top: 5px;
+    }
 
 }
 
 @media screen and (max-width:460px) {
-    
-.time{
-    display: flex;
-    flex-direction: column;
-    
+
+    .time {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .time-writeup-1 {
+        padding: 5px;
+    }
+
+    .time-writeup-2 {
+
+        padding: 5px;
+
+    }
+
+    .btn-3 {
+        padding-top: 10px;
+    }
+
 }
 
-.time-writeup-1{
-    padding: 5px;
-}
 
-.time-writeup-2{
-
-    padding: 5px;
-
-}
-
-.btn-3{
-    padding-top:10px ;
-}
-
-}
-
-
-.wel-church{
+.wel-church {
 
     background-color: #eee;
     display: flex;
@@ -213,15 +212,15 @@ padding-left: 150px;
     padding-left: 200px;
 }
 
-.welcome{
+.welcome {
     background-color: white;
     margin: 50px;
     padding: 50px;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 
-.days{
+.days {
 
     background-color: rgb(233, 69, 69);
     color: white;
@@ -231,25 +230,301 @@ padding-left: 150px;
     font-size: 30px;
 }
 
-.days-1 > div{
+.days-1>div {
     padding: 10px;
 }
 
-.days-1{
+.days-1 {
     display: inline-flex;
-    padding:2rem ;
+    padding: 2rem;
 }
 
-.day-1233{
+.day-1233 {
     border-right: 2px white solid;
 }
 
-.hours{
+.hours {
     border-right: white 2px solid;
 }
 
-.seconds{
+.seconds {
     padding-left: 30px;
     padding-top: 0px;
     margin-top: -20px;
+}
+
+
+@media screen and (max-width:991px) {
+
+    .wel-church {
+        display: flex;
+        flex-direction: column;
+        font-size: larger;
+        justify-content: center;
+    }
+
+
+    .welcome {
+
+        flex-direction: column;
+        margin-bottom: 0px;
+        margin-right: 150px;
+        margin-left: 10px;
+        font-size: 100%;
+    }
+
+    .days {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0px;
+        margin-right: 150px;
+        margin-left: 10px;
+    }
+
+    .seconds {
+
+        display: flex;
+        flex-direction: column;
+
+    }
+
+}
+
+
+.Our {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 400%;
+    padding-left: 5px;
+    /* border: red 2px solid; */
+}
+
+.event {
+    display: flex;
+    justify-content: space-evenly;
+    /* border: yellow 2px solid; */
+}
+
+.morning-gather {
+    padding: 5px;
+
+}
+
+.event-pic img {
+    width: 350px;
+}
+
+i {
+    color: red;
+}
+
+.morning-writeup {
+    /* padding-left: 5px; */
+    padding: 5px;
+
+}
+
+b {
+    font-size: larger;
+}
+
+.as-is {
+    font-size: large;
+    padding: 5px;
+    border: red 2px soild;
+}
+
+@media screen and (max-width:991px) {
+
+    /* .writeup-{
+        display: flex;
+        padding-bottom: 60px;
+    } */
+}
+
+@media screen and (max-width:991px) {
+
+    .event {
+        display: flex;
+        flex-direction: column;
+        /* border: red 5px  solid; */
+    }
+
+    .Our {
+        /* padding-right: 400px; */
+        font-size: large;
+
+    }
+
+    .morning-gather {
+        text-align: center;
+    }
+
+    /* .sec-1{
+   padding-left: 150px;
+    } */
+
+
+}
+
+
+.lates-sharing {
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+}
+
+.lates {
+    display: flex;
+    justify-content: space-around;
+}
+
+.serv img {
+    width: 350px;
+}
+
+/* .special-b b :hover {
+    color: rgb(233, 69, 69);
+} */
+
+:hover .special-b{
+    color: rgb(233, 69, 69);
+}
+
+@media screen and (max-width:991px) {
+    .lates-sharing {
+        text-align: center;
+        padding: 20px;
+        margin: 20px;
+        /* padding-right:300px ; */
+        /* border: red 2px solid; */
+    }
+
+    .lates {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        /* padding-left:150px ; */
+
+    }
+
+    .serv {
+        margin: 30px;
+    }
+}
+
+
+
+.vvm {
+    text-align: center;
+    padding: 20px;
+    margin: 30px;
+}
+
+.vvm-writeup {
+    display: flex;
+    justify-content: space-around;
+}
+
+.vvm-h3 {
+    font-weight: 1000;
+    font-size: xx-large;
+}
+
+.vvm-p {
+    font-weight: 1000;
+    font-size: larger;
+    color: rgba(0, 0, 0, 0.774);
+}
+
+
+@media screen and (max-width:767px) {
+    .vvm-writeup {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+        margin: 15px;
+    }
+
+    .vvm-actual{
+        padding: 10px;
+        margin: 20px;
+    }
+}
+
+
+.our-faith{
+    text-align: center;
+    padding: 20px;
+    margin: 15px;
+}
+
+.sharing{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 40px;
+    
+}
+
+.sharing-writeup{
+    /* width: 50%; */
+}
+
+.btn-4{
+    background-color: white;
+    border-radius: 5px;
+    margin: 30px;
+    padding: 15px;
+    font-weight: 300;
+    color: red;
+    border: 2px red solid;
+}
+:hover .btn-4 {
+    background-color: rgb(233, 69, 69);
+    color: white;
+}
+
+/* .white-church img{
+    width: 50%;
+} */
+
+@media screen and (max-width:991px){
+    .sharing{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.prayer{
+    background-image: url(./img/background4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+
+}
+
+.prayer-writeup > p{
+    color: white;
+    font-weight: 500;
+    font-size: 100px;
+    text-align: center;
+    padding: 50px;
+    border: 2px solid green;
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-5{
+    text-align: center;
+    border-radius: 5px;
+    margin: 30px;
+    padding: 15px;
+    font-weight: 300;
+    color:white;
+    border: 2px white solid;
+    background-color: rgba(255, 235, 205, 0);
 }
