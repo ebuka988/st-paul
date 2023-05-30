@@ -88,12 +88,17 @@ nav {
 .btn-2 {
 
     font-weight: 300;
-    padding: 15px;
+    padding: 15px 40px;
     background-color: rgb(218, 5, 5);
     color: white;
-    border-radius: 10px;
+    border-radius: 5px;
     border: 0px;
     margin: 30px;
+}
+
+.btn-2:hover{
+    color:white;
+    background-color:  rgb(87, 3, 3) ;
 }
 
 
@@ -101,8 +106,9 @@ nav {
 .faith {
     text-align: center;
     font-weight: bolder;
-    padding: 20px;
-    margin: 40px;
+    padding: 15px;
+    margin: 30px;
+    color: rgba(0, 0, 0, 0.692);
 
 }
 
@@ -148,15 +154,20 @@ nav {
 
 }
 
-.btn-3 button {
+.btn-3 {
 
-    padding: 10px;
+    padding: 15px 30px;
     border-radius: 5px;
     border: 0px;
     border: 2px white solid;
     color: white;
     background-color: rgb(233, 69, 69);
 
+}
+
+.btn-3:hover{
+    color: rgb(233, 69, 69) ;
+    background-color: white;
 }
 
 @media screen and (max-width:991px) {
@@ -204,33 +215,37 @@ nav {
 
 
 .wel-church {
-
     background-color: #eee;
     display: flex;
     gap: 0px;
     /* text-align: center; */
     padding-left: 200px;
+    padding: 5rem;
+
 }
 
 .welcome {
     background-color: white;
-    margin: 50px;
+    margin: 60px;
     padding: 50px;
+    padding-right: 60px;
+    /* padding-bottom: 10px; */
     font-weight: 400;
+
 }
 
 
 .days {
-
     background-color: rgb(233, 69, 69);
     color: white;
-    padding: 35x;
+    padding: 35px;
+    min-width: 40%;
     margin: 30px;
     /* padding-left: 0px; */
-    font-size: 30px;
+    font-size: 40px;
 }
 
-.days-1>div {
+.days-1 > div {
     padding: 10px;
 }
 
@@ -261,6 +276,7 @@ nav {
         flex-direction: column;
         font-size: larger;
         justify-content: center;
+        /* min-width: 100%; */
     }
 
 
@@ -293,16 +309,21 @@ nav {
 
 .Our {
     text-align: center;
-    font-weight: bolder;
-    font-size: 400%;
+    font-weight: bold;
+    font-size: 35px;
     padding-left: 5px;
+    font-family: sans-serif;
     /* border: red 2px solid; */
+    margin-top: 5rem;
+    margin-bottom: 3rem;
 }
 
 .event {
     display: flex;
     justify-content: space-evenly;
     /* border: yellow 2px solid; */
+    padding-left: 35px;
+    margin: 5px;
 }
 
 .morning-gather {
@@ -370,13 +391,14 @@ b {
 
 .lates-sharing {
     text-align: center;
-    padding: 20px;
-    margin: 20px;
+    padding: 30px;
+    margin: 40px;
 }
 
 .lates {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    padding-left: 35px;
 }
 
 .serv img {
@@ -387,7 +409,7 @@ b {
     color: rgb(233, 69, 69);
 } */
 
-:hover .special-b{
+.special-b:hover {
     color: rgb(233, 69, 69);
 }
 
@@ -418,12 +440,12 @@ b {
 .vvm {
     text-align: center;
     padding: 20px;
-    margin: 30px;
+    margin: 80px;
 }
 
 .vvm-writeup {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .vvm-h3 {
@@ -456,15 +478,26 @@ b {
 
 .our-faith{
     text-align: center;
-    padding: 20px;
-    margin: 15px;
+    padding: 10px;
+    margin-top: 8rem;
+}
+
+.our-letters{
+    font-size: 25px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.904);
+    margin-bottom: 10px;
+}
+.our-p{
+    font-weight: 1000;
+    color: rgba(0, 0, 0, 0.603);
 }
 
 .sharing{
     display: flex;
     justify-content: space-around;
     width: 100%;
-    padding: 40px;
+    padding: 20px;
     
 }
 
@@ -474,14 +507,15 @@ b {
 
 .btn-4{
     background-color: white;
-    border-radius: 5px;
+    border-radius: 3px;
     margin: 30px;
-    padding: 15px;
+    margin-left: 0px;
+    padding: 15px 40px;
     font-weight: 300;
     color: red;
-    border: 2px red solid;
+    border: 2px  rgb(233, 69, 69) solid;
 }
-:hover .btn-4 {
+.btn-4:hover {
     background-color: rgb(233, 69, 69);
     color: white;
 }
@@ -504,27 +538,308 @@ b {
     background-size: cover;
     background-position: center;
     min-height: 100vh;
+margin-top: 30px;
+padding-bottom: 30px;
 
 }
 
 .prayer-writeup > p{
     color: white;
-    font-weight: 500;
-    font-size: 100px;
+    font-weight: 400;
+    font-size: 70px;
     text-align: center;
-    padding: 50px;
-    border: 2px solid green;
+    padding: 100px;
+    padding-bottom: 30px;
+    /* border: 2px solid green; */
     display: flex;
     flex-direction: column;
+
+}
+
+.prayer-writeup{
+   max-width: 60rem;
+   margin: auto;
+}
+
+h4{
+    font-size: 40px;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.btn5, h4{
+    text-align: center;
 }
 
 .btn-5{
-    text-align: center;
+    align-content: center;
     border-radius: 5px;
-    margin: 30px;
+    margin: 0px;
     padding: 15px;
     font-weight: 300;
     color:white;
     border: 2px white solid;
     background-color: rgba(255, 235, 205, 0);
+}
+
+.btn-5:hover{
+    color:  rgb(233, 69, 69);
+    border: 2px  rgb(233, 69, 69) solid;
+}
+
+
+
+
+.meet-pastors{
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.781);
+    margin: 50px;
+    padding: 10px;
+}
+
+.pastors{
+    display: flex;
+    justify-content: ;
+
+}
+
+.pastors-div{
+    display: flex;
+    margin: 0px;
+}
+
+.pastors-img > img{
+    width: 200px;
+ 
+}
+.pastors-img3 img{
+    width: 200px;
+}
+
+.pst-h4{
+    color: black;
+}
+
+.container{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+}
+
+/* .container > div{
+    margin: 0px;
+} */
+
+.child{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.child > div{
+    margin: 20px;
+}
+
+.child-p{
+    color: rgb(233, 69, 69);
+}
+
+.donate-month{
+    text-align: center;
+    margin-top: 5rem;
+    padding: 50px;
+
+}
+
+.sec-6{
+    /* padding: 2rem; */
+    background-color: #eee;
+}
+
+.general-parent{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
+    /* gap: 30px; */
+    /* margin: 80px; */
+    padding-bottom: 50px;
+    padding-top: 30px;
+}
+
+.parent{
+    display: flex;
+}
+
+.parent > div{
+    margin: 10px;
+}
+
+/* .parent2{
+    display: flex;
+} */
+
+/* @media screen and (max-width:991px) {
+
+} */
+
+
+.donate-i{
+    color: gray;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.Student-donate{
+    background-color: #fff;
+    max-width: 300px;
+    
+}
+
+.student-1{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 2rem 5.4rem;
+}
+
+.theme{
+    min-width: 200px;
+    text-align: justify;
+    line-height: 35px;
+    padding: 2rem;
+}
+
+.theme-p{
+    text-align: center;
+    width: 200px;
+    margin-left: 10px;
+}
+
+.little-con{
+    text-align: center;
+}
+
+.moni{
+    color: rgba(128, 0, 0, 0.856);
+    text-align: center;
+    padding: 20px 18px;
+}
+
+.moni > span{
+    font-size: 50px;
+    text-align: center;
+}
+
+.btn-con{
+    padding: 38px 18px;
+    text-align: center;
+   margin-bottom: 10px;
+}
+
+.btn-6{
+    padding: 1rem 2.2rem;
+    background-color: transparent;
+    border: none;
+    outline: 2px solid #e0dfdf;
+    border-radius: 2px;
+    font-weight: bold;
+}
+
+.btn-6:hover{
+    background-color: maroon;
+    color: white;
+    outline: 2px solid maroon;
+    transition: 0.4s;
+}
+
+
+
+.student-donate2{
+    background-color: #fff;
+    max-width: 300px;
+}
+
+
+
+.working-people{
+    background-color: maroon;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    /* border: yellow 2px solid; */
+   
+}
+
+.med-donators{
+    background-color: #fff;
+    max-width: 275px;
+    /* margin-top: 10px; */
+}
+
+.medium-donators{
+    background-color: #cf4a46;
+    color: white;
+    text-align: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    /* border: yellow 2px solid; */
+    /* margin: 10px; */
+}
+
+.business-donate{
+    background-color: #fff;
+    max-width: 275px;
+    /* margin-top: 10px; */
+}
+
+.Business{
+    padding: 2rem;
+    background-color: #dd6043;
+    color: white;
+    text-align: center;
+   
+}
+
+
+
+
+/* .general-parent > div{
+    margin: 20px;
+} */
+
+h1{
+    font-family: 'Poppins', sans-serif;
+}
+
+.site{
+    background-color: #1b2125;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 70px;
+}
+
+.contact-us ul{
+    list-style-type: none;
+}
+
+.useful ul{
+    list-style-type: none;
+}
+
+.free-church ul{
+    list-style-type: none;
+}
+
+@media screen and (max-width:991px) {
+    .site{
+        padding: 60px;
+    }
 }
