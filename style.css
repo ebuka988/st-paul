@@ -405,9 +405,10 @@ nav {
 
 .event {
     display: flex;
-    justify-content: space-evenly;
-    /* border: yellow 2px solid; */
-    padding-left: 35px;
+    justify-content: center;
+    
+  
+   
     margin: 5px;
 }
 
@@ -429,6 +430,7 @@ i {
     padding: 5px;
 /* display: flex;
 justify-content: center; */
+
 }
 
 b {
@@ -444,7 +446,8 @@ b {
 
 @media screen and (max-width:991px) {
 .as-is{
-    max-width: 300px;
+    font-size: 20px;
+     max-width: 300;
 }
    
 }
@@ -454,8 +457,11 @@ b {
     .event {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        
         /* border: red 5px  solid; */
     }
+    
 
     .Our {
         /* padding-right: 400px; */
@@ -469,10 +475,7 @@ b {
 
     }
 
-    .as-is{
-  font-size: 20px;
-  
-    }
+   
 
     /* .sec-1{
    padding-left: 150px;
@@ -554,8 +557,8 @@ b {
 }
 
 .vvm-h3 {
-    font-weight: 1000;
-    font-size: xx-large;
+    font-weight: 1500;
+    font-size: large;
 }
 
 .vvm-p {
@@ -565,7 +568,7 @@ b {
 }
 
 
-@media screen and (max-width:767px) {
+@media screen and (max-width:991px) {
 
     .vvm {
         margin-top: 15px;
@@ -691,7 +694,7 @@ b {
 }
 
 h5 {
-    font-size: 40px;
+    font-size: 30px;
     color: white;
     padding-top: 20px;
     padding-bottom: 30px;
@@ -728,7 +731,7 @@ h4 {
 
 .prayer-p, p{
 
-    font-weight: bold;
+    font-weight: ;
 }
 
 }
@@ -792,6 +795,15 @@ h4 {
 
 .child-p {
     color: rgb(233, 69, 69);
+}
+
+@media screen and (max-width:430px) {
+    
+    .container{
+        border: 2px red solid;
+        padding-left: 75px;
+    }
+
 }
 
 .donate-month {
@@ -985,6 +997,21 @@ h1 {
 @media screen and (max-width:991px) {
     .site {
         padding: 60px;
+    }
+}
+
+@media screen and (max-width:430px) {
+    .site{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-us{
+        margin-bottom: 5px;
+    }
+
+    .useful{
+        margin-top: 5px;
     }
 }
 
