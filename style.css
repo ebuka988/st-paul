@@ -47,6 +47,11 @@ nav {
     border: 0px;
 }
 
+.btn1:hover {
+    padding: 17px 25px;
+    transition: 2s;
+}
+
 @media screen and (max-width:991px) {
 
     nav {
@@ -72,15 +77,15 @@ nav {
     background-size: cover;
     background-position: center;
     min-height: 100vh;
-    /* width: 100%;
-    height: 100%; */
+    width: 100%;
+    /* height: 100%; */
 }
 
 .cath-writeup {
 
     color: white;
     text-align: center;
-    padding-top: 200px;
+    padding-top: 270px;
     font-size: 50px;
 }
 
@@ -96,9 +101,29 @@ nav {
     margin: 30px;
 }
 
-.btn-2:hover{
-    color:white;
-    background-color:  rgb(87, 3, 3) ;
+.btn-2:hover {
+    color: white;
+    background-color: rgb(87, 3, 3);
+}
+
+
+@media screen and (max-width:430px) {
+
+    .cathdral {
+        display: flex;
+        
+    }
+
+    .cath-writeup{
+        /* min-height: 100vh; */
+       
+        border: 2px solid red;
+    }
+
+    /* .to-church h3{
+        border: 2px solid red;
+    } */
+
 }
 
 
@@ -122,11 +147,28 @@ nav {
 
 }
 
+.statement-writeup {
+    padding: 2px;
+}
+
+
+
 @media screen and (max-width:991px) {
 
     .statement {
         display: flex;
         flex-direction: column;
+    }
+
+
+
+}
+
+@media screen and (max-width:430px) {
+
+    .statement-writeup {
+        margin: 15px;
+
     }
 
 }
@@ -165,8 +207,8 @@ nav {
 
 }
 
-.btn-3:hover{
-    color: rgb(233, 69, 69) ;
+.btn-3:hover {
+    color: rgb(233, 69, 69);
     background-color: white;
 }
 
@@ -189,7 +231,7 @@ nav {
 
 }
 
-@media screen and (max-width:460px) {
+@media screen and (max-width:430px) {
 
     .time {
         display: flex;
@@ -209,6 +251,7 @@ nav {
 
     .btn-3 {
         padding-top: 10px;
+        margin: 5px;
     }
 
 }
@@ -245,7 +288,7 @@ nav {
     font-size: 40px;
 }
 
-.days-1 > div {
+.days-1>div {
     padding: 10px;
 }
 
@@ -306,6 +349,48 @@ nav {
 
 }
 
+@media screen and (max-width:430px) {
+
+    .wel-church {
+        display: flex;
+        flex-direction: column;
+        font-size: medium;
+        justify-content: center;
+        /* min-width: 100%; */
+    }
+
+    .welcome {
+
+        flex-direction: column;
+        margin-bottom: 0px;
+        margin-right: 0px;
+        margin-left: 5px;
+        font-size: 100%;
+    }
+
+    .days {
+        display: flex;
+        flex-direction: row;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-left: 0px;
+        max-width: 100%;
+        font-size: small;
+        box-sizing: border-box;
+    }
+
+    .seconds {
+
+        display: flex;
+        flex-direction: column;
+        font-size: small;
+        margin-top: 50px;
+        margin-right: 850px;
+    }
+
+
+}
+
 
 .Our {
     text-align: center;
@@ -342,7 +427,8 @@ i {
 .morning-writeup {
     /* padding-left: 5px; */
     padding: 5px;
-
+/* display: flex;
+justify-content: center; */
 }
 
 b {
@@ -350,17 +436,17 @@ b {
 }
 
 .as-is {
-    font-size: large;
+    font-size: 19px;
+
     padding: 5px;
     border: red 2px soild;
 }
 
 @media screen and (max-width:991px) {
-
-    /* .writeup-{
-        display: flex;
-        padding-bottom: 60px;
-    } */
+.as-is{
+    max-width: 300px;
+}
+   
 }
 
 @media screen and (max-width:991px) {
@@ -378,7 +464,14 @@ b {
     }
 
     .morning-gather {
-        text-align: center;
+        display: block;
+        justify-content: center;
+
+    }
+
+    .as-is{
+  font-size: 20px;
+  
     }
 
     /* .sec-1{
@@ -399,6 +492,7 @@ b {
     display: flex;
     justify-content: space-evenly;
     padding-left: 35px;
+    font-size: 18px;
 }
 
 .serv img {
@@ -427,6 +521,7 @@ b {
         flex-direction: column;
         text-align: center;
         /* padding-left:150px ; */
+        font-size: 18px;
 
     }
 
@@ -440,12 +535,22 @@ b {
 .vvm {
     text-align: center;
     padding: 20px;
-    margin: 80px;
+    margin-top: 80px;
 }
 
 .vvm-writeup {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+}
+
+.vvm-writeup>div {
+    margin: 20px;
+}
+
+.vvm-actual p {
+    font-size: 19px;
+    max-width: 300px;
+    text-align: left;
 }
 
 .vvm-h3 {
@@ -461,51 +566,63 @@ b {
 
 
 @media screen and (max-width:767px) {
+
+    .vvm {
+        margin-top: 15px;
+        padding-bottom: 5px;
+    }
+
     .vvm-writeup {
         display: flex;
         flex-direction: column;
         text-align: center;
-        padding: 10px;
-        margin: 15px;
+        padding: 5px;
+        margin-top: 5px;
+        justify-content: center;
     }
 
-    .vvm-actual{
+    .vvm-actual {
         padding: 10px;
-        margin: 20px;
+        display: flex;
+        justify-content: center;
+        text-align: justify;
+
     }
 }
 
 
-.our-faith{
+.our-faith {
     text-align: center;
     padding: 10px;
     margin-top: 8rem;
 }
 
-.our-letters{
+.our-letters {
     font-size: 25px;
     font-weight: bold;
     color: rgba(0, 0, 0, 0.904);
     margin-bottom: 10px;
 }
-.our-p{
+
+.our-p {
     font-weight: 1000;
     color: rgba(0, 0, 0, 0.603);
 }
 
-.sharing{
+.sharing {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     width: 100%;
     padding: 20px;
-    
+
 }
 
-.sharing-writeup{
+.sharing-writeup {
     /* width: 50%; */
+    /* max-width: 400px; */
 }
 
-.btn-4{
+.btn-4 {
     background-color: white;
     border-radius: 3px;
     margin: 30px;
@@ -513,8 +630,9 @@ b {
     padding: 15px 40px;
     font-weight: 300;
     color: red;
-    border: 2px  rgb(233, 69, 69) solid;
+    border: 2px rgb(233, 69, 69) solid;
 }
+
 .btn-4:hover {
     background-color: rgb(233, 69, 69);
     color: white;
@@ -524,74 +642,99 @@ b {
     width: 50%;
 } */
 
-@media screen and (max-width:991px){
-    .sharing{
+@media screen and (max-width:991px) {
+    .sharing {
         display: flex;
         flex-direction: column;
         text-align: center;
+
     }
+
+    
 }
 
-.prayer{
+@media screen and (max-width:430px) {
+    
+    /* .btn-4{
+        margin-right: 15px;
+    } */
+
+}
+
+.prayer {
     background-image: url(./img/background4.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     min-height: 100vh;
-margin-top: 30px;
-padding-bottom: 30px;
+    margin-top: 30px;
+    padding-bottom: 30px;
 
 }
 
-.prayer-writeup > p{
+.prayer-writeup>p {
     color: white;
     font-weight: 400;
-    font-size: 70px;
+    font-size: 60px;
     text-align: center;
     padding: 100px;
     padding-bottom: 30px;
     /* border: 2px solid green; */
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
 
 }
 
-.prayer-writeup{
-   max-width: 60rem;
-   margin: auto;
+.prayer-writeup {
+    max-width: 60rem;
+    margin: auto;
 }
 
-h4{
+h5 {
     font-size: 40px;
     color: white;
     padding-top: 20px;
     padding-bottom: 30px;
-}
-
-.btn5, h4{
     text-align: center;
 }
 
-.btn-5{
+.btn5,
+h4 {
+    text-align: center;
+}
+
+.btn-5 {
     align-content: center;
     border-radius: 5px;
     margin: 0px;
     padding: 15px;
     font-weight: 300;
-    color:white;
+    color: white;
     border: 2px white solid;
     background-color: rgba(255, 235, 205, 0);
 }
 
-.btn-5:hover{
-    color:  rgb(233, 69, 69);
-    border: 2px  rgb(233, 69, 69) solid;
+.btn-5:hover {
+    color: rgb(233, 69, 69);
+    border: 2px rgb(233, 69, 69) solid;
+}
+
+@media screen and (max-width:430px){
+    .prayer-writeup{
+        display: flex;
+        flex-direction: column;
+        border: solid green 2px;
+    }
+
+.prayer-p, p{
+
+    font-weight: bold;
+}
+
 }
 
 
-
-
-.meet-pastors{
+.meet-pastors {
     font-size: 30px;
     font-family: sans-serif;
     font-weight: bold;
@@ -601,30 +744,31 @@ h4{
     padding: 10px;
 }
 
-.pastors{
+.pastors {
     display: flex;
     justify-content: ;
 
 }
 
-.pastors-div{
+.pastors-div {
     display: flex;
     margin: 0px;
 }
 
-.pastors-img > img{
+.pastors-img>img {
     width: 200px;
- 
+
 }
-.pastors-img3 img{
+
+.pastors-img3 img {
     width: 200px;
 }
 
-.pst-h4{
+.pst-h4 {
     color: black;
 }
 
-.container{
+.container {
     margin-top: 50px;
     display: flex;
     flex-wrap: wrap;
@@ -637,32 +781,32 @@ h4{
     margin: 0px;
 } */
 
-.child{
+.child {
     display: flex;
     flex-wrap: wrap;
 }
 
-.child > div{
+.child>div {
     margin: 20px;
 }
 
-.child-p{
+.child-p {
     color: rgb(233, 69, 69);
 }
 
-.donate-month{
+.donate-month {
     text-align: center;
     margin-top: 5rem;
     padding: 50px;
 
 }
 
-.sec-6{
+.sec-6 {
     /* padding: 2rem; */
     background-color: #eee;
 }
 
-.general-parent{
+.general-parent {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -673,11 +817,11 @@ h4{
     padding-top: 30px;
 }
 
-.parent{
+.parent {
     display: flex;
 }
 
-.parent > div{
+.parent>div {
     margin: 10px;
 }
 
@@ -690,60 +834,60 @@ h4{
 } */
 
 
-.donate-i{
+.donate-i {
     color: gray;
     font-family: sans-serif;
     font-weight: bold;
 }
 
-.Student-donate{
+.Student-donate {
     background-color: #fff;
     max-width: 300px;
-    
+
 }
 
-.student-1{
+.student-1 {
     background-color: black;
     color: white;
     text-align: center;
     padding: 2rem 5.4rem;
 }
 
-.theme{
+.theme {
     min-width: 200px;
     text-align: justify;
     line-height: 35px;
     padding: 2rem;
 }
 
-.theme-p{
+.theme-p {
     text-align: center;
     width: 200px;
     margin-left: 10px;
 }
 
-.little-con{
+.little-con {
     text-align: center;
 }
 
-.moni{
+.moni {
     color: rgba(128, 0, 0, 0.856);
     text-align: center;
     padding: 20px 18px;
 }
 
-.moni > span{
+.moni>span {
     font-size: 50px;
     text-align: center;
 }
 
-.btn-con{
+.btn-con {
     padding: 38px 18px;
     text-align: center;
-   margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
-.btn-6{
+.btn-6 {
     padding: 1rem 2.2rem;
     background-color: transparent;
     border: none;
@@ -752,7 +896,7 @@ h4{
     font-weight: bold;
 }
 
-.btn-6:hover{
+.btn-6:hover {
     background-color: maroon;
     color: white;
     outline: 2px solid maroon;
@@ -761,29 +905,29 @@ h4{
 
 
 
-.student-donate2{
+.student-donate2 {
     background-color: #fff;
     max-width: 300px;
 }
 
 
 
-.working-people{
+.working-people {
     background-color: maroon;
     color: white;
     text-align: center;
     padding: 2rem;
     /* border: yellow 2px solid; */
-   
+
 }
 
-.med-donators{
+.med-donators {
     background-color: #fff;
     max-width: 275px;
     /* margin-top: 10px; */
 }
 
-.medium-donators{
+.medium-donators {
     background-color: #cf4a46;
     color: white;
     text-align: center;
@@ -793,18 +937,18 @@ h4{
     /* margin: 10px; */
 }
 
-.business-donate{
+.business-donate {
     background-color: #fff;
     max-width: 275px;
     /* margin-top: 10px; */
 }
 
-.Business{
+.Business {
     padding: 2rem;
     background-color: #dd6043;
     color: white;
     text-align: center;
-   
+
 }
 
 
@@ -814,11 +958,11 @@ h4{
     margin: 20px;
 } */
 
-h1{
+h1 {
     font-family: 'Poppins', sans-serif;
 }
 
-.site{
+.site {
     background-color: #1b2125;
     color: white;
     display: flex;
@@ -826,20 +970,31 @@ h1{
     padding: 70px;
 }
 
-.contact-us ul{
+.contact-us ul {
     list-style-type: none;
 }
 
-.useful ul{
+.useful ul {
     list-style-type: none;
 }
 
-.free-church ul{
+.free-church ul {
     list-style-type: none;
 }
 
 @media screen and (max-width:991px) {
-    .site{
+    .site {
         padding: 60px;
     }
+}
+
+.copyr {
+    background-color: #171c1f;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+.copy-p {
+    color: red;
 }
