@@ -111,13 +111,14 @@ nav {
 
     .cathdral {
         display: flex;
-        
+        padding: 20px;
+
     }
 
-    .cath-writeup{
+    .cath-writeup {
         /* min-height: 100vh; */
-       
-        border: 2px solid red;
+
+
     }
 
     /* .to-church h3{
@@ -197,13 +198,12 @@ nav {
 }
 
 .btn-3 {
-
-    padding: 15px 30px;
+    padding: 16px 30px;
     border-radius: 5px;
-    border: 0px;
     border: 2px white solid;
     color: white;
     background-color: rgb(233, 69, 69);
+    text-align: center;
 
 }
 
@@ -229,6 +229,8 @@ nav {
         padding-top: 5px;
     }
 
+    .btn-3 {}
+
 }
 
 @media screen and (max-width:430px) {
@@ -250,8 +252,8 @@ nav {
     }
 
     .btn-3 {
-        padding-top: 10px;
         margin: 5px;
+        flex-direction: column;
     }
 
 }
@@ -288,12 +290,12 @@ nav {
     font-size: 40px;
 }
 
-.days-1>div {
+.days-1>p {
     padding: 10px;
 }
 
 .days-1 {
-    display: inline-flex;
+    display: flex;
     padding: 2rem;
 }
 
@@ -311,6 +313,56 @@ nav {
     margin-top: -20px;
 }
 
+.bg-mar:not(.bg-mar2) {
+    background-color: #cf4a46;
+    max-width: 90%;
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.bg-mar1 {
+    /* max-width: 90%; */
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+
+}
+
+.bg-mar1>p {
+    height: 75px;
+    font-size: 30px;
+    color: white;
+    padding-left: 0px;
+
+
+}
+
+
+.bg-mar2>p {
+    height: 75px;
+    font-size: 30px;
+    color: white;
+
+
+
+}
+
+.bg-mar>p {
+    border-left: 2px solid white;
+    height: 75px;
+    font-size: 30px;
+    font-weight: semi-bold;
+    padding: 20px;
+    color: white;
+
+
+}
+
+
 
 @media screen and (max-width:991px) {
 
@@ -324,7 +376,7 @@ nav {
 
 
     .welcome {
-
+        display: flex;
         flex-direction: column;
         margin-bottom: 0px;
         margin-right: 150px;
@@ -341,13 +393,16 @@ nav {
     }
 
     .seconds {
-
         display: flex;
         flex-direction: column;
-
+        padding-left: 30px;
+        padding-top: 0px;
+        margin-top: -20px;
     }
 
 }
+
+
 
 @media screen and (max-width:430px) {
 
@@ -360,7 +415,7 @@ nav {
     }
 
     .welcome {
-
+        display: flex;
         flex-direction: column;
         margin-bottom: 0px;
         margin-right: 0px;
@@ -368,28 +423,31 @@ nav {
         font-size: 100%;
     }
 
+    .days-1 {
+        font-size: medium;
+
+    }
+
     .days {
         display: flex;
-        flex-direction: row;
         margin-top: 0px;
         margin-right: 0px;
         margin-left: 0px;
-        max-width: 100%;
         font-size: small;
         box-sizing: border-box;
     }
 
     .seconds {
-
         display: flex;
         flex-direction: column;
-        font-size: small;
-        margin-top: 50px;
+        font-size: normal;
         margin-right: 850px;
+        border-left: 2px white solid;
     }
 
 
 }
+
 
 
 .Our {
@@ -406,9 +464,9 @@ nav {
 .event {
     display: flex;
     justify-content: center;
-    
-  
-   
+
+
+
     margin: 5px;
 }
 
@@ -428,7 +486,7 @@ i {
 .morning-writeup {
     /* padding-left: 5px; */
     padding: 5px;
-/* display: flex;
+    /* display: flex;
 justify-content: center; */
 
 }
@@ -438,19 +496,13 @@ b {
 }
 
 .as-is {
-    font-size: 19px;
+    font-size: 17px;
 
-    padding: 5px;
+    padding: 10px;
     border: red 2px soild;
 }
 
-@media screen and (max-width:991px) {
-.as-is{
-    font-size: 20px;
-     max-width: 300;
-}
-   
-}
+@media screen and (max-width:991px) {}
 
 @media screen and (max-width:991px) {
 
@@ -458,10 +510,10 @@ b {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        
+
         /* border: red 5px  solid; */
     }
-    
+
 
     .Our {
         /* padding-right: 400px; */
@@ -470,12 +522,17 @@ b {
     }
 
     .morning-gather {
-        display: block;
+        flex-direction: column;
         justify-content: center;
+        text-align: center;
 
     }
 
-   
+    .as-is {
+        font-size: 15px;
+        max-width: 300;
+    }
+
 
     /* .sec-1{
    padding-left: 150px;
@@ -483,6 +540,8 @@ b {
 
 
 }
+
+
 
 
 .lates-sharing {
@@ -493,13 +552,13 @@ b {
 
 .lates {
     display: flex;
-    justify-content: space-evenly;
-    padding-left: 35px;
-    font-size: 18px;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
 }
 
-.serv img {
-    width: 350px;
+.serv > img {
+    max-width: 300px;
 }
 
 /* .special-b b :hover {
@@ -528,12 +587,16 @@ b {
 
     }
 
-    .serv {
+    /* .serv {
         margin: 30px;
+        padding: 40px;
+    } */
+
+    .serv > img {
+        max-width: 700px;
+        padding: 2rem;
     }
 }
-
-
 
 .vvm {
     text-align: center;
@@ -563,7 +626,7 @@ b {
 
 .vvm-p {
     font-weight: 1000;
-    font-size: larger;
+    font-size: ;
     color: rgba(0, 0, 0, 0.774);
 }
 
@@ -571,7 +634,7 @@ b {
 @media screen and (max-width:991px) {
 
     .vvm {
-        margin-top: 15px;
+        margin-top: 20px;
         padding-bottom: 5px;
     }
 
@@ -653,11 +716,11 @@ b {
 
     }
 
-    
+
 }
 
 @media screen and (max-width:430px) {
-    
+
     /* .btn-4{
         margin-right: 15px;
     } */
@@ -670,17 +733,17 @@ b {
     background-size: cover;
     background-position: center;
     min-height: 100vh;
-    margin-top: 30px;
+    padding-top: 30px;
     padding-bottom: 30px;
 
 }
 
-.prayer-writeup>p {
+.prayer-writeup > p {
     color: white;
     font-weight: 400;
     font-size: 60px;
     text-align: center;
-    padding: 100px;
+    /* padding: 100px; */
     padding-bottom: 30px;
     /* border: 2px solid green; */
     /* display: flex;
@@ -722,16 +785,21 @@ h4 {
     border: 2px rgb(233, 69, 69) solid;
 }
 
-@media screen and (max-width:430px){
-    .prayer-writeup{
-        display: flex;
-        flex-direction: column;
+@media screen and (max-width:430px) {
+    .prayer-writeup {
+        /* display: flex;
+        flex-direction: column; */
         border: solid green 2px;
     }
 
-.prayer-p, p{
+   
+.prayer-writeup > p {
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    padding-bottom: 30px;
+    margin: 0px;
 
-    font-weight: ;
 }
 
 }
@@ -749,7 +817,7 @@ h4 {
 
 .pastors {
     display: flex;
-    justify-content: ;
+    justify-content: center;
 
 }
 
@@ -789,7 +857,7 @@ h4 {
     flex-wrap: wrap;
 }
 
-.child>div {
+.child > div {
     margin: 20px;
 }
 
@@ -797,11 +865,19 @@ h4 {
     color: rgb(233, 69, 69);
 }
 
-@media screen and (max-width:430px) {
-    
-    .container{
+@media screen and (max-width:580px) {
+
+    .container {
+        display: flex;
+        justify-content: center;
         border: 2px red solid;
-        padding-left: 75px;
+
+        /* padding-left: 75px; */
+    }
+
+    .child {
+        display: flex;
+        justify-content: center;
     }
 
 }
@@ -833,7 +909,7 @@ h4 {
     display: flex;
 }
 
-.parent>div {
+.parent > div {
     margin: 10px;
 }
 
@@ -963,7 +1039,22 @@ h4 {
 
 }
 
+@media screen and (max-width:875px) {
+    .parent{
+        display: flex;
+        flex-direction: column;
+    }
 
+   .med-donators{
+    display: flex;
+    flex-direction: column;
+   }
+
+   .business-donate{
+    display: flex;
+    flex-direction: column;
+   }
+}
 
 
 /* .general-parent > div{
@@ -1001,18 +1092,19 @@ h1 {
 }
 
 @media screen and (max-width:430px) {
-    .site{
+    .site {
         display: flex;
         flex-direction: column;
     }
 
-    .contact-us{
+    .contact-us {
         margin-bottom: 5px;
     }
 
-    .useful{
+    .useful {
         margin-top: 5px;
     }
+
 }
 
 .copyr {
